@@ -21,11 +21,6 @@ public class FindByCountryAsyncTask {
     }
     @Async
     public CompletableFuture<UniversityDto[]> findByCountryAsync(String country, String resourceUrl, RestTemplate restTemplate) {
-//        try {
-//            Thread.sleep(3000L);
-//        } catch (InterruptedException ex) {
-//            System.out.println("INTERRUPTED!!!");
-//        }
         return CompletableFuture.completedFuture(findByCountry(country, resourceUrl, restTemplate));
     }
 }

@@ -62,7 +62,6 @@ public class SearchByCountryServiceImpl implements SearchByCountryService {
         return futuresList.stream().map(CompletableFuture::join).collect(Collectors.toList());
     }
 
-
 }
 
 

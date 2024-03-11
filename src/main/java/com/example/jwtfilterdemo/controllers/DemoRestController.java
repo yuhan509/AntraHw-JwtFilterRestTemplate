@@ -24,7 +24,6 @@ import java.util.List;
 @RequestMapping("/api/v1")
 public class DemoRestController {
 
-
     private final JwtService jwtService;
 
     private final AuthenticationManager authenticationManager;
